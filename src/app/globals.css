@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #eeeef1;
   --foreground: #171717;
+  --white-color: #FFF;
+  --black-color: #353535;
+  --gray1-color: #525252;
+  --gray2-color: #666;
 }
 
 @theme inline {
@@ -20,7 +24,98 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: var(--white-color);
+  color: var(--gray1-color);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: var(--white-color);
+  color: var(--gray1-color);
+
+  /* > div {
+    line-height: 0;
+  } */
+  .system-state,
+  .system-update {
+    font-size: 0.8rem;
+    /* line-height: 1; */
+  }
+
+  .system-state {
+    display: flex;
+    align-items: center;
+
+    .indicator-status {
+      margin-right: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: #68c74a;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+}
+
+.logo {
+  color: #207e62;
+  font-weight: bold;
+}
+
+.dash-content {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.news-list {
+  padding-right: 1rem;
+  max-height: 30rem;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--background);
+  }
+  &::-webkit-scrollbar-thumb {
+    /* background-color: #003f5c; */
+    background-color: #0d1b2a;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  /* &::-webkit-scrollbar-thumb:hover {
+    background-color: #075477;
+  } */
+}
+
+.side-power-bi {
+  background-color: var(--white-color);
+  color: var(--gray1-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  min-height: 30rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }

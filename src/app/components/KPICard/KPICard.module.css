@@ -1,0 +1,89 @@
+.KPI {
+    overflow: hidden;
+    width: 20%;
+    background-color: var(--color-white);
+    /* color: var(--black-color); */
+    /* color: #0d1b2a; */
+    color: #003f5c;
+    padding: 1rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #f5b018;
+    }
+
+    &:nth-child(2n) {
+        &::before {
+            background-color: #1479b3;
+        }
+    }
+}
+
+.titleKPI {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.valueKPI {
+    /* color: #1f177c; */
+    /* color: #7267fa; */
+    color: #4a6fa5;
+    /* color: #222;
+    color:#0d1b2a; */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    span {
+        font-size: 1.125rem;
+        font-weight: 100;
+    }
+}
+
+.indicatorKPI {
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    .percentageKPI {
+        margin-right: 5px;
+        display: flex;
+        &.positive {
+            color: #53814b;
+        }
+        &.negative {
+            color: #ef2b2e;
+            .triangle {
+                rotate: 180deg;
+            }
+        }
+    }
+}
+
+.triangle {
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid currentColor;
+    vertical-align: middle;
+    transition: rotate 0.3s ease;
+    -webkit-transition: rotate 0.3s ease;
+    -moz-transition: rotate 0.3s ease;
+    -ms-transition: rotate 0.3s ease;
+    -o-transition: rotate 0.3s ease;
+}
