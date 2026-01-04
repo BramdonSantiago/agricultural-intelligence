@@ -1,5 +1,9 @@
 .newsItem {
     background-color: var(--white-color);
+    /* background-position: bottom center; */
+    background-position: 25px center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 1rem;
     min-height: 10rem;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
@@ -38,5 +42,5 @@
 
 .timeNewsItem {
     font-size: 0.875rem;
-    color: var(--gray2-color);
+    color: var(--gray1-color);
 }
