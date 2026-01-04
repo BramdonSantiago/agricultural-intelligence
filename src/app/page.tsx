@@ -32,7 +32,7 @@ export default function Home() {
             </div>
           </ul>
           <div className="mt-4">
-            <Link href={''}>Ver más Noticias</Link>
+            <Link href={''} className="btn btn-primary">Ver más Noticias</Link>
           </div>
         </div>
         <div className="col-span-8">
@@ -40,7 +40,7 @@ export default function Home() {
             POWER BI
           </div>
           <div className="mt-4">
-            <Link href={''}>Ver más Tableros</Link>
+            <Link href={''} className="btn btn-primary">Ver más Tableros</Link>
           </div>
         </div>
       </div>
