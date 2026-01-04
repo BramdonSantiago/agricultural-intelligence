@@ -7,7 +7,7 @@ export function Header() {
                 <Link href="/" className="logo">
                     AgroTech
                 </Link>
-                <ul className="flex gap-6 nav-list">
+                <ul className="flex gap-8 nav-list">
                     <li>
                         <Link href="/dashboard">Inicio</Link>
                     </li>
