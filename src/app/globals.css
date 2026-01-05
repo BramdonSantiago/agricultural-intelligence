@@ -105,9 +105,9 @@ body {
 .logo {
   font-size: 1.250rem;
   color: #207e62;
-  font-weight: 700;
+  font-weight: 300;
   span {
-    color: #fcc228;
+    font-weight: 700;
   }
 }
 
