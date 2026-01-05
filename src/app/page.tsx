@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         <div className="col-span-8 mb-4">
           <div className="side-power-bi">
-            <div>    
+            <div>
               <iframe src="http://www.economia.gob.mx/datamexico/en/profile/product/animal-products#product-price-by-states"></iframe>
             </div>
           </div>
@@ -50,105 +50,125 @@ export default function Home() {
         <div className="col-span-6 mb-4">
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
-            <ul className="documentation-list">
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+            <div className="accordion">
+              <details open className="accordion-item">
+                <summary>Informe de producción avicola</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Informe de producción avicola</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Informe de producción avicola</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Informe de producción avicola</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Informe de producción avicola</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </details>
+            </div>
           </div>
         </div>
         <div className="col-span-6 mb-4">
           <div className="documentation-content">
             <h3 className="title-documentation">Documentos</h3>
-            <ul className="documentation-list">
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+            <div className="accordion">
+              <details open className="accordion-item">
+                <summary>Normas sanitarias</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Normas sanitarias</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Normas sanitarias</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Normas sanitarias</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-              <li className="documentation-item">
-                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
-                <div className="documentation-item-body mt-4">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+              </details>
+              <details className="accordion-item">
+                <summary>Normas sanitarias</summary>
+                <div className="accordion-body">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                  </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </details>
+            </div>
           </div>
         </div>
       </div>
