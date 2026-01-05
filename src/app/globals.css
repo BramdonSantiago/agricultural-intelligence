@@ -145,12 +145,17 @@ body {
 .side-power-bi {
   background-color: var(--white-color);
   padding: 1rem;
-  /* min-height: 30rem; */
+  height: 30rem;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  iframe {
+    width: 100%;
+    height: 29rem;
+    border: 0;
+  }
 }
 
 .documentation-content {
@@ -217,11 +222,6 @@ body {
   -o-transition: rotate 0.3s ease;
 }
 
-iframe {
-  width: 100%;
-  height: 30rem;
-  border: 0;
-}
 
 
 @keyframes pulseColor {
