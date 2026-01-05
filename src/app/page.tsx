@@ -37,7 +37,9 @@ export default function Home() {
         </div>
         <div className="col-span-8 mb-4">
           <div className="side-power-bi">
-            POWER BI
+            <div>    
+              <iframe src="http://www.economia.gob.mx/datamexico/en/profile/product/animal-products#price-evolution"></iframe>
+            </div>
           </div>
           <div className="mt-4 text-end">
             <Link href={''} className="btn btn-primary">Ver más Tableros</Link>

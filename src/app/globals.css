@@ -144,12 +144,7 @@ body {
 
 .side-power-bi {
   background-color: var(--white-color);
-  color: var(--gray1-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 3rem;
+  padding: 1rem;
   min-height: 30rem;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -220,6 +215,12 @@ body {
   -moz-transition: rotate 0.3s ease;
   -ms-transition: rotate 0.3s ease;
   -o-transition: rotate 0.3s ease;
+}
+
+iframe {
+  width: 100%;
+  height: 30rem;
+  border: 0;
 }
 
 
