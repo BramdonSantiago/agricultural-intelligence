@@ -154,7 +154,7 @@ body {
 .documentation-content {
   background-color: var(--white-color);
   /* padding: 1rem; */
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -230,9 +230,9 @@ body {
 }
 
 .news-and-embedded {
-  background-color: #FFF;
+  background-color: var(--white-color);
   padding: 1rem;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -240,7 +240,8 @@ body {
   -o-border-radius: 8px;
   h2 {
     font-size: 1.250rem;
-    color: var(--black-color);
+    /* color: var(--black-color); */
+    color:#0d1b2a;
     font-weight: 300;
     margin-bottom: 1rem;
   }
