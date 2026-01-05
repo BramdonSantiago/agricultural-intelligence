@@ -25,12 +25,13 @@
 
 body {
   background-color: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border: 0;
   font-weight: 600;
   font-size: 1rem;
@@ -81,7 +82,7 @@ body {
     align-items: center;
 
     .indicator-status {
-      margin-right: 10px;
+      margin-right: 5px;
       width: 8px;
       height: 8px;
       background-color: #68c74a;

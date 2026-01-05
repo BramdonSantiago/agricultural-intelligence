@@ -31,7 +31,7 @@ export default function Home() {
               <NewsItem />
             </div>
           </ul>
-          <div className="mt-4">
+          <div className="mt-4 text-end">
             <Link href={''} className="btn btn-primary">Ver más Noticias</Link>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Home() {
           <div className="side-power-bi">
             POWER BI
           </div>
-          <div className="mt-4">
+          <div className="mt-4 text-end">
             <Link href={''} className="btn btn-primary">Ver más Tableros</Link>
           </div>
         </div>
