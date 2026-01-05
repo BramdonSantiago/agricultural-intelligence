@@ -223,6 +223,18 @@ body {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 
   .nav-list {
+    @media(max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 85dvw;
+      height: 100dvh;
+      background-color: var(--white-color);
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 1.5rem;
+      z-index: 10;
+    }
     .nav-item {
       font-weight: 500;
       position: relative;
