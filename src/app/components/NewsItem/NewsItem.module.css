@@ -16,7 +16,7 @@
 
 
 .categoryNewsItem {
-    background-color: #44793a;
+    background-color: var(--black-color);
     color: #FFF;
     text-transform: uppercase;
     display: inline-block;
@@ -29,6 +29,15 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    &.price {
+        background-color: #427836;
+    }
+    &.health {
+        background-color: #1479b3;
+    }
+    &.trade {
+        background-color: #ab382e;
+    }
 }
 
 .titleNewsItem {
