@@ -12,8 +12,8 @@ export default function Home() {
         <KPICard />
         <KPICard />
       </div>
-      <div className="grid grid-cols-12 gap-10 mb-10">
-        <div className="col-span-4 col-news">
+      <div className="xl:grid grid-cols-12 gap-10 mb-10">
+        <div className="col-span-4 col-news mb-4">
           <ul className="news-list">
             <div className="mb-2">
               <NewsItem />
@@ -35,7 +35,7 @@ export default function Home() {
             <Link href={''} className="btn btn-primary">Ver más Noticias</Link>
           </div>
         </div>
-        <div className="col-span-8">
+        <div className="col-span-8 mb-4">
           <div className="side-power-bi">
             POWER BI
           </div>
@@ -44,8 +44,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-10">
-        <div className="col-span-6">
+      <div className="xl:grid grid-cols-12 gap-10">
+        <div className="col-span-6 mb-4">
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
             <ul className="documentation-list">
@@ -97,7 +97,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 mb-4">
           <div className="documentation-content">
             <h3 className="title-documentation">Documentos</h3>
             <ul className="documentation-list">

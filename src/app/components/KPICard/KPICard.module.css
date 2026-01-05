@@ -1,6 +1,5 @@
 .KPI {
     overflow: hidden;
-    width: 20%;
     background-color: var(--color-white);
     /* color: var(--black-color); */
     /* color: #0d1b2a; */
@@ -13,7 +12,9 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     position: relative;
-
+    @media(min-width: 1200px) {
+        width: 20%;
+    }
     &::before {
         content: "";
         position: absolute;
