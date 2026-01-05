@@ -12,7 +12,7 @@ export function Header() {
                     <span>Agro</span>Tech
                 </Link>
                 <nav className="flex gap-8 nav-list">
-                    <h3 className="mb-4 md:hidden">Munú de Navegación</h3>
+                    <h3 className="mb-4 lg:hidden">Munú de Navegación</h3>
                     <Link className={`${pathname === '/' ? 'active-nav-item' : ''} nav-item`} href="/">Inicio</Link>
                     <Link className={`${pathname === '/kpis' ? 'active-nav-item' : ''} nav-item`} href="/kpis">KPIs</Link>
                     <Link className={`${pathname === '/noticias' ? 'active-nav-item' : ''} nav-item`} href="/noticias">Noticias</Link>
@@ -31,7 +31,7 @@ export function Header() {
                         </div>
                     </label>
                 </div>
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <div className="menu-hamburger">
                         <span></span>
                         <span></span>

@@ -223,7 +223,7 @@ body {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 
   .nav-list {
-    @media(max-width: 767px) {
+    @media(max-width: 991px) {
       position: fixed;
       top: 0;
       left: 0;
