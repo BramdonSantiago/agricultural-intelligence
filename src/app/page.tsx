@@ -4,7 +4,7 @@ import { NewsItem } from "./components/NewsItem/NewsItem"
 
 export default function Home() {
   return (
-    <main className="main-content py-8 px-10">
+    <main className="main-content py-6 px-6 xl:py-8 xl:px-10">
       <div className="xl:flex justify-between gap-4 mb-10">
         <KPICard />
         <KPICard />

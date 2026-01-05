@@ -85,6 +85,7 @@ body {
   .system-state {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .indicator-status {
       margin-right: 5px;
@@ -178,7 +179,7 @@ body {
 }
 
 .documentation-item {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   color: var(--gray1-color);
   font-size: 0.875rem;
   border-bottom: 1px solid #ececec;
