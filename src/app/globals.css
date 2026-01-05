@@ -234,6 +234,11 @@ body {
       flex-direction: column;
       padding: 2rem 1.5rem;
       z-index: 10;
+      .title-menu-navigation {
+        font-weight: 300;
+        font-size: 1.250rem;
+        margin-bottom: 1rem;
+      }
     }
     .nav-item {
       font-weight: 500;
