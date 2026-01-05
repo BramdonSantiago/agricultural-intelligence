@@ -30,7 +30,7 @@ export function Header() {
                         </div>
                     </label>
                 </div>
-                <div className="xl:hidden">
+                <div className="md:hidden">
                     <div className="menu-hamburger">
                         <span></span>
                         <span></span>
