@@ -105,6 +105,44 @@ body {
   width: 100%;
   z-index: 9;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  .nav-list {
+    .nav-item {
+      position: relative;
+      transition: color 0.3s ease;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      &::before {
+        content: "";
+        position: absolute;
+        top: calc(100% + 0.875rem);
+        width: 0;
+        height: 5px;
+        background-color: #427836;
+        opacity: 0;
+        visibility: hidden;
+        /* border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px; */
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+      }
+      &:hover, &.active-nav-item {
+        color: #427836;
+        &::before {
+          opacity: 1;
+          visibility: visible;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 .footer {

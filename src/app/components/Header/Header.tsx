@@ -1,36 +1,28 @@
-import Link from "next/link"
+'use client';
+
+import Link from "next/link";
+import { usePathname } from 'next/navigation';
 
 export function Header() {
-    return(
+    const pathname = usePathname();
+    return (
         <header className="header">
-            <nav className="flex items-center justify-between py-4 px-10">
+            <div className="flex items-center justify-between py-4 px-10">
                 <Link href="/" className="logo">
                     <span>Agro</span>Tech
                 </Link>
-                <ul className="flex gap-8 nav-list">
-                    <li>
-                        <Link href="/dashboard">Inicio</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">KPIs</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">Noticias</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">Tableros</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">Ánalisis</Link>
-                    </li>
-                    <li>
-                        <Link href="/about">Documentos</Link>
-                    </li>
-                </ul>
+                <nav className="flex gap-8 nav-list">
+                    <Link className={`${pathname === '/' ? 'active-nav-item' : ''} nav-item`} href="/">Inicio</Link>
+                    <Link className={`${pathname === '/kpis' ? 'active-nav-item' : ''} nav-item`} href="/kpis">KPIs</Link>
+                    <Link className={`${pathname === '/noticias' ? 'active-nav-item' : ''} nav-item`} href="/noticias">Noticias</Link>
+                    <Link className={`${pathname === '/tableros' ? 'active-nav-item' : ''} nav-item`} href="/tableros">Tableros</Link>
+                    <Link className={`${pathname === '/analisis' ? 'active-nav-item' : ''} nav-item`} href="/analisis">Ánalisis</Link>
+                    <Link className={`${pathname === '/documentos' ? 'active-nav-item' : ''} nav-item`} href="/documentos">Documentos</Link>
+                </nav>
                 <div>
                     <span>Huevo | Pollo</span>
                 </div>
-            </nav>
+            </div>
         </header>
     )
 
