@@ -232,7 +232,7 @@ body {
       background-color: var(--white-color);
       display: flex;
       flex-direction: column;
-      padding: 3rem 1.5rem;
+      padding: 2rem 1.5rem;
       z-index: 10;
     }
     .nav-item {
