@@ -22,6 +22,15 @@ export function Header() {
                 <div>
                     <span>Huevo | Pollo</span>
                 </div>
+                <div>
+                    <label className="ui-switch">
+                        <input type="checkbox" />
+                            <div className="slider">
+                                <div className="circle"></div>
+                            </div>
+                    </label>
+
+                </div>
             </div>
         </header>
     )
