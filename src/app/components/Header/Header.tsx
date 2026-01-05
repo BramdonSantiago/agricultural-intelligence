@@ -3,7 +3,7 @@ import Link from "next/link"
 export function Header() {
     return(
         <header className="header">
-            <nav className="flex items-center justify-between py-4 px-8">
+            <nav className="flex items-center justify-between py-4 px-10">
                 <Link href="/" className="logo">
                     AgroTech
                 </Link>

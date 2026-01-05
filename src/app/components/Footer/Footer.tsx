@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Footer() {
     return (
-        <footer className="footer py-4 px-8">
+        <footer className="footer py-4 px-10">
             <div className="flex justify-between align-center">
                 <Link href="/" className="logo">
                     AgroTech
