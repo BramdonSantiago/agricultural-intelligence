@@ -12,8 +12,9 @@ export default function Home() {
         <KPICard />
         <KPICard />
       </div>
-      <div className="xl:grid grid-cols-12 gap-10 mb-10">
+      <div className="xl:grid grid-cols-12 gap-10 mb-10 news-and-embedded">
         <div className="col-span-4 col-news mb-4">
+          <h2>Noticias</h2>
           <ul className="news-list">
             <div className="mb-2">
               <NewsItem />
@@ -36,6 +37,7 @@ export default function Home() {
           </div>
         </div>
         <div className="col-span-8 mb-4">
+          {/* <h2>Tablero</h2> */}
           <div className="side-power-bi">
             <div>
               <iframe src="http://www.economia.gob.mx/datamexico/en/profile/product/animal-products#product-price-by-states"></iframe>
@@ -172,6 +174,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
     </main>
   );
 }
