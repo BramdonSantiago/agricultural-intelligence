@@ -50,14 +50,14 @@ body {
     background-color: #427836;
     color: #FFF;
     &:hover, &:focus, &:active {
-      background-color: #356d29;
+      background-color: #326926;
     }
   }
   &.btn-secondary {
     background-color: #f0a90e;
     color: #FFF;
     &:hover, &:focus, &:active {
-      background-color: #d39000;
+      background-color: #c98900;
     }
   }
 }
