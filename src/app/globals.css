@@ -103,8 +103,12 @@ body {
 }
 
 .logo {
+  font-size: 1.250rem;
   color: #207e62;
-  font-weight: bold;
+  font-weight: 700;
+  span {
+    color: #fcc228;
+  }
 }
 
 .dash-content {

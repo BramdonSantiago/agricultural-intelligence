@@ -5,7 +5,7 @@ export function Header() {
         <header className="header">
             <nav className="flex items-center justify-between py-4 px-10">
                 <Link href="/" className="logo">
-                    AgroTech
+                    <span>Agro</span>Tech
                 </Link>
                 <ul className="flex gap-8 nav-list">
                     <li>
