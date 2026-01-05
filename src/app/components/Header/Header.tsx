@@ -7,7 +7,7 @@ export function Header() {
     const pathname = usePathname();
     return (
         <header className="header">
-            <div className="flex items-center justify-between py-4 px-10">
+            <div className="flex items-center justify-between py-4 px-6 xl:py-4 xl:px-10">
                 <Link href="/" className="logo">
                     <span>Agro</span>Tech
                 </Link>
@@ -25,11 +25,17 @@ export function Header() {
                 <div>
                     <label className="ui-switch">
                         <input type="checkbox" />
-                            <div className="slider">
-                                <div className="circle"></div>
-                            </div>
+                        <div className="slider">
+                            <div className="circle"></div>
+                        </div>
                     </label>
-
+                </div>
+                <div>
+                    <div className="menu-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </header>

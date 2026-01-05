@@ -188,6 +188,31 @@ body {
   height: 0;
 }
 
+.menu-hamburger {
+  width: 32px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  span {
+    height: 3px;
+    width: 100%;
+    background: var(--black-color);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+  }
+}
+
+
+
 .header {
   background-color: var(--white-color);
   color: var(--gray1-color);
