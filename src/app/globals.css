@@ -75,10 +75,7 @@ body {
 .footer {
   background-color: var(--white-color);
   color: var(--gray1-color);
-
-  /* > div {
-    line-height: 0;
-  } */
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   .system-state,
   .system-update {
     font-size: 0.8rem;
