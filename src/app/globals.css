@@ -44,11 +44,6 @@ body {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   &::before {
     content: "";
     position: absolute;
@@ -64,17 +59,19 @@ body {
     background-color: #427836;
     color: #FFF;
     &::before {
-      background-color: #275c1b;
+      border-style: solid;
+      border-width: 0 0 0 0;
+      border-color: #0d1b2a transparent transparent transparent;
+      /* border-color: #275c1b transparent transparent transparent; */
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
       width: 0;
+      height: 0;
     }
     &:hover {
       &::before {
-        width: 100%;
         opacity: 1;
+        border-width: 330px 330px 0 0;
       }
     }
   }
@@ -83,7 +80,8 @@ body {
     background-color: #f0a90e;
     color: #FFF;
     &::before {
-      background-color: #c28400;
+      background-color: #0d1b2a;
+      /* background-color: #c28400; */
       bottom: 0;
       left: 0;
       right: 0;
@@ -92,8 +90,8 @@ body {
     }
     &:hover {
       &::before {
-        height: 100%;
         opacity: 1;
+        height: 100%;
       }
     }
   }
