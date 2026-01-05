@@ -5,14 +5,14 @@ import { NewsItem } from "./components/NewsItem/NewsItem"
 export default function Home() {
   return (
     <main className="main-content py-8 px-10">
-      <div className="xl:flex justify-between gap-4">
+      <div className="xl:flex justify-between gap-4 mb-10">
         <KPICard />
         <KPICard />
         <KPICard />
         <KPICard />
         <KPICard />
       </div>
-      <div className="grid grid-cols-12 gap-10 mt-10">
+      <div className="grid grid-cols-12 gap-10 mb-10">
         <div className="col-span-4 col-news">
           <ul className="news-list">
             <div className="mb-2">
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-10 mt-10">
+      <div className="grid grid-cols-12 gap-10">
         <div className="col-span-6">
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
