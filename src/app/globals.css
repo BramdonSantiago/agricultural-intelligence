@@ -91,6 +91,8 @@ body {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
+      animation: pulseColor 3s ease-in-out infinite;
+      -webkit-animation: pulseColor 3s ease-in-out infinite;
     }
   }
 }
@@ -145,3 +147,12 @@ body {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
+@keyframes pulseColor {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+} 
