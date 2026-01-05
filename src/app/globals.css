@@ -35,21 +35,29 @@ body {
   border: 0;
   font-weight: 600;
   font-size: 1rem;
+  cursor: pointer;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   &.btn-primary {
     background-color: #427836;
     color: #FFF;
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
     &:hover, &:focus, &:active {
       background-color: #356d29;
+    }
+  }
+  &.btn-secondary {
+    background-color: #f0a90e;
+    color: #FFF;
+    &:hover, &:focus, &:active {
+      background-color: #d39000;
     }
   }
 }
@@ -172,11 +180,44 @@ body {
   padding: 0.5rem 1rem;
   color: var(--gray1-color);
   font-size: 0.875rem;
-  font-weight: 600;
   border-bottom: 1px solid #ececec;
   &:last-child {
     border-color: transparent;
   }
+}
+
+.documentation-item-body {
+  p {
+    font-size: 0.8rem;
+    color: var(--gray2-color);
+  }
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+} 
+
+.btn-documentation {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.documentation-item-triangle {
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid #427836;
+  vertical-align: middle;
+  rotate: 90deg;
+  transition: rotate 0.3s ease;
+  -webkit-transition: rotate 0.3s ease;
+  -moz-transition: rotate 0.3s ease;
+  -ms-transition: rotate 0.3s ease;
+  -o-transition: rotate 0.3s ease;
 }
 
 

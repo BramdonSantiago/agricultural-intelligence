@@ -49,24 +49,104 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
             <ul className="documentation-list">
-              <li className="documentation-item">Informe de producción avicola</li>
-              <li className="documentation-item">Informe de producción avicola</li>
-              <li className="documentation-item">Informe de producción avicola</li>
-              <li className="documentation-item">Informe de producción avicola</li>
-              <li className="documentation-item">Informe de producción avicola</li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Informe de producción avicola</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
         <div className="col-span-6">
           <div className="documentation-content">
-              <h3 className="title-documentation">Documentos</h3>
-              <ul className="documentation-list">
-                <li className="documentation-item">Normas sanitarias</li>
-                <li className="documentation-item">Normas sanitarias</li>
-                <li className="documentation-item">Normas sanitarias</li>
-                <li className="documentation-item">Normas sanitarias</li>
-                <li className="documentation-item">Normas sanitarias</li>
-              </ul>
+            <h3 className="title-documentation">Documentos</h3>
+            <ul className="documentation-list">
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+              <li className="documentation-item">
+                <div className="btn-documentation"><span className="documentation-item-triangle"></span>Guía de sanidad</div>
+                <div className="documentation-item-body mt-4">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perspiciatis veritatis eaque tenetur, dignissimos exercitationem saepe inventore perferendis temporibus? Nostrum.</p>
+                  <div className="mt-4">
+                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
