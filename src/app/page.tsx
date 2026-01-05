@@ -38,7 +38,7 @@ export default function Home() {
         <div className="col-span-8 mb-4">
           <div className="side-power-bi">
             <div>    
-              <iframe src="http://www.economia.gob.mx/datamexico/en/profile/product/animal-products#price-evolution"></iframe>
+              <iframe src="http://www.economia.gob.mx/datamexico/en/profile/product/animal-products#product-price-by-states"></iframe>
             </div>
           </div>
           <div className="mt-4 text-end">

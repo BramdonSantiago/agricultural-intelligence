@@ -145,7 +145,7 @@ body {
 .side-power-bi {
   background-color: var(--white-color);
   padding: 1rem;
-  min-height: 30rem;
+  /* min-height: 30rem; */
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;

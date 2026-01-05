@@ -32,7 +32,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased xl:py-8 xl:px-12`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased xl:py-8 xl:px-12`}
       >
           <div className="dash-content">
             <Header />
