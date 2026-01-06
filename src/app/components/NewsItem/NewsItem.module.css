@@ -45,9 +45,13 @@
     font-size: 1.125rem;
     color: #0d1b2a;
     font-weight: 700;
-    max-width: 65%;
+    max-width: 70%;
     margin-bottom: 1rem;
     line-height: 1.2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 
 .timeNewsItem {

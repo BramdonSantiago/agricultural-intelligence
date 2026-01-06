@@ -5,8 +5,11 @@ import { KPICard } from "./components/KPICard/KPICard"
 import { NewsItem } from "./components/NewsItem/NewsItem";
 import { useState, useEffect } from "react";
 
+
+
+
 export default function Home() {
-  const kpiData = [
+  const kpiData: any = [
     {
       titleKPI: "Precio promedio del huevo",
       valueKPI: "$45.00",
@@ -44,43 +47,56 @@ export default function Home() {
     },
   ];
 
-  // function getRandomVariation() {
-  //   // Simula cambio diario entre -1% y +1%
-  //   return parseFloat((Math.random() * 2 - 1).toFixed(2));
-  // }
+  const newsData: any = [
+    {
+      id: 1,
+      title: "Precio del huevo en México sube 19% por presiones del mercado de EE. UU.",
+      date: "01/01/2026",
+      image: "assets/img/news-1.jpg",
+      source: "El Imparcial",
+      summary: "El precio del huevo en México ha aumentado 19% debido a presiones del mercado en Estados Unidos y factores de oferta y demanda locales. La producción nacional se mantiene estable, pero la variación internacional influye en los precios locales.",
+      category: "Precio",
+    },
+    {
+      id: 2,
+      title: "Precio del huevo y pollo encarece la canasta básica en México",
+      date: "03/01/2026",
+      image: "assets/img/news-2.jpg",
+      source: "El País",
+      summary: "El precio del huevo y del pollo ha encarecido la canasta básica en México debido a la gripe aviar en Estados Unidos, lo que ha aumentado costos y generado presión inflacionaria en productos esenciales.",
+      category: "Precio",
+    },
+    {
+      id: 3,
+      title: "Autoridades refuerzan medidas sanitarias en granjas avícolas del país",
+      date: "05/01/2026",
+      image: "assets/img/news-8.jpg",
+      source: "ADN40",
+      summary: "Los precios del kilo de huevo en CDMX y Estado de México se mantienen entre rangos establecidos por el SNIIM, con variaciones según los centros de distribución y mercado local.",
+      category: "Sanidad",
+    },
+    {
+      id: 4,
+      title: "México mantiene estatus sanitario favorable en producción de huevo",
+      date: "07/01/2026",
+      image: "assets/img/news-9.jpg",
+      source: "La Mejor",
+      summary: "La Profeco identificó marcas de huevo que han reducido su precio recientemente, beneficiando al consumidor con opciones más accesibles sin sacrificar calidad.",
+      category: "Sanidad",
+    },
+    {
+      id: 5,
+      title: "Aumenta el volumen de comercialización de huevo en el mercado nacional",
+      date: "10/01/2026",
+      image: "assets/img/news-5.jpg",
+      source: "NMás",
+      summary: "El precio de la cartera de 30 huevos alcanzó un valor histórico de 110 pesos mexicanos en Tijuana, marcado por variaciones de mercado y costos en la cadena de suministro.",
+      category: "Comercio",
+    },
+  ];
 
-  // function getIndicator(variation) {
-  //   if (variation > 0) return "positive";
-  //   if (variation < 0) return "negative";
-  //   return "neutral";
-  // }
 
 
-  // const [kpis, setKpis] = useState(kpiData);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setKpis((prevKpis) =>
-  //       prevKpis.map((kpi) => {
-  //         if (kpi.titleKPI.includes("Precio promedio del huevo")) {
-  //           const variation = getRandomVariation();
-  //           const indicator = getIndicator(variation);
-  //           const newValue = parseFloat(
-  //             (kpi.valueKPI * (1 + variation / 100)).toFixed(2)
-  //           );
-  //           return {
-  //             ...kpi,
-  //             valueKPI: newValue,
-  //             variationKPI: Math.abs(variation),
-  //             indicatorKPI: indicator,
-  //           };
-  //         }
-  //         return kpi; // resto no cambia
-  //       })
-  //     );
-  //   }, 3000); // cada 3 segundos
-  //   return () => clearInterval(interval);
-  // }, []);
 
   return (
     <main className="main-content py-6 px-6 xl:py-8 xl:px-10">
@@ -93,21 +109,11 @@ export default function Home() {
         <div className="col-span-4 col-news mb-4">
           <h2>Noticias</h2>
           <ul className="news-list">
-            <div className="mb-2">
-              <NewsItem />
-            </div>
-            <div className="mb-2">
-              <NewsItem />
-            </div>
-            <div className="mb-2">
-              <NewsItem />
-            </div>
-            <div className="mb-2">
-              <NewsItem />
-            </div>
-            <div className="mb-2">
-              <NewsItem />
-            </div>
+            {newsData.map((news, index) => (
+              <div className="mb-2">
+                <NewsItem key={index} title={news.title} date={news.date} image={news.image} category={news.category} />
+              </div>
+            ))}
           </ul>
           <div className="mt-4 text-end">
             <Link href={''} className="btn btn-primary">Ver más Noticias</Link>
