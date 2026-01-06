@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     padding: 1rem;
     min-height: 10rem;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow-secondary);
     cursor: pointer;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -43,7 +43,7 @@
 
 .titleNewsItem {
     font-size: 1.125rem;
-    color: #0d1b2a;
+    color: var(--title-color-primary);
     font-weight: 700;
     max-width: 70%;
     margin-bottom: 1rem;
@@ -57,5 +57,5 @@
 .timeNewsItem {
     font-size: 0.875rem;
     font-weight: 400;
-    color: var(--gray1-color);
+    color: var(--text-color-secondary);
 }

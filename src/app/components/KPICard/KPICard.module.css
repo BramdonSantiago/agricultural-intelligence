@@ -1,11 +1,11 @@
 .KPI {
     overflow: hidden;
-    background-color: var(--color-white);
+    background-color: var(--background-color-secondary);
     /* color: var(--black-color); */
     /* color: #0d1b2a; */
-    color: #003f5c;
+    color: var(--text-color-kpi);
     padding: 1rem;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow-terteary);
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -42,7 +42,7 @@
     /* color: #1f177c; */
     /* color: #7267fa; */
     /* color: #4a6fa5; */
-    color:#0d1b2a;
+    color: var(--title-color-primary);
     font-size: 1.75rem;
     font-weight: 900;
     margin-bottom: 1rem;
