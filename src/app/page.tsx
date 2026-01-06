@@ -151,7 +151,7 @@ export default function Home() {
                 <summary>Informe de producción avicola</summary>
                 <div className="accordion-body">
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum temporibus sequi debitis veniam quod minima ex vitae omnis porro, voluptates vero similique magni nisi quo placeat perferendis qui dolorum tempora? Quaerat nulla ex explicabo, pariatur blanditiis veritatis? Molestiae repudiandae facere alias laborum numquam repellendus qui ab hic aliquid, facilis quam earum saepe voluptatum delectus accusamus beatae. Laboriosam sapiente amet quod libero iure, ea pariatur culpa facilis consequuntur quos vero magnam distinctio esse deserunt autem omnis mollitia qui explicabo inventore modi quis incidunt molestiae fugit labore? Aut, reprehenderit? Distinctio incidunt numquam repudiandae nostrum. Iste, impedit. Suscipit animi dolorem consequatur optio doloribus, numquam qui fuga? Aspernatur eveniet harum aliquam minima, tempora facilis facere libero a, quam incidunt repellendus quibusdam necessitatibus maiores odit!
                   </p>
                   <div className="mt-4">
                     <a href="#" className="btn btn-secondary">Descargar documento</a>
@@ -257,7 +257,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
     </main>
   );
 }
