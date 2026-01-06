@@ -18,6 +18,7 @@
   --text-color-kpi: #003f5c;
   --logo-color: #207e62;
   --border-color-primary: #ececec;
+  --backdrop-color: 255, 255, 255;
   --box-shadow-primary: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
   --box-shadow-secondary: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
   --box-shadow-terteary: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
@@ -49,6 +50,7 @@
     /* --border-color-primary: #272c3d; */
     --text-color-kpi: #bbb;
     --logo-color: #e1e1e1;
+    --backdrop-color: 0, 0, 0;
     --box-shadow-primary: 0 3px 3px 0 rgba(255, 255, 255, 0.05);
     --box-shadow-secondary: 0 5px 5px 0 rgba(255, 255, 255, 0.1);
     --box-shadow-terteary: 0 3px 3px 0 rgba(255, 255, 255, 0.2);
@@ -229,7 +231,7 @@ body {
   span {
     height: 3px;
     width: 100%;
-    background: var(--black-color);
+    background: var(--text-color-primary);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -254,8 +256,7 @@ body {
   z-index: 9;
   box-shadow: var(--box-shadow-secondary);
   .backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(var(--backdrop-color), 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -282,7 +283,6 @@ body {
       left: -100%;
       width: 75dvw;
       height: 100dvh;
-      background-color: var(--white-color);
       display: flex;
       flex-direction: column;
       padding: 2rem 1.5rem;
@@ -392,6 +392,7 @@ body {
   color: var(--logo-color);
   font-weight: 300;
   text-align: center;
+  line-height: 1.2;
   span {
     font-weight: 700;
   }
