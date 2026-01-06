@@ -50,7 +50,7 @@ export default function Home() {
   const newsData: any = [
     {
       id: 1,
-      title: "Precio del huevo en México sube 19% por presiones del mercado de EE. UU.",
+      title: "Precio del huevo en México sube 19% por presiones del mercado de EE. UU",
       date: "01/01/2026",
       image: "assets/img/news-1.jpg",
       source: "El Imparcial",
