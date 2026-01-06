@@ -324,7 +324,7 @@ body {
       &::after {
         content: "";
         position: absolute;
-        top: calc(100% + 1.5rem);
+        top: calc(100% + 1rem);
         left: 0;
         width: 0;
         height: 5px;
