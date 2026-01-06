@@ -221,13 +221,34 @@ body {
   width: 100%;
   z-index: 9;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: 9;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    &.show-backdrop {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
   .nav-list {
     @media(max-width: 991px) {
       position: fixed;
       top: 0;
       left: -100%;
-      width: 85dvw;
+      width: 75dvw;
       height: 100dvh;
       background-color: var(--white-color);
       display: flex;

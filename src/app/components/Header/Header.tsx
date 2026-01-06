@@ -49,6 +49,9 @@ export function Header() {
                     </div>
                 </div>
             </div>
+            <div onClick={() => setShowNavList(!showNavList)} className={`backdrop ${showNavList ? 'show-backdrop' : ''}`}>
+
+            </div>
         </header>
     )
 
