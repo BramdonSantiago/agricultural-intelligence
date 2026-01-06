@@ -16,6 +16,7 @@
   --text-color-terteary: #666;
   --title-color-primary: #0d1b2a;
   --text-color-kpi: #003f5c;
+  --logo-color: #207e62;
   --border-color-primary: #ececec;
   --box-shadow-primary: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
   --box-shadow-secondary: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
@@ -47,6 +48,7 @@
     --border-color-primary: #2c323f;
     /* --border-color-primary: #272c3d; */
     --text-color-kpi: #bbb;
+    --logo-color: #e1e1e1;
     --box-shadow-primary: 0 3px 3px 0 rgba(255, 255, 255, 0.05);
     --box-shadow-secondary: 0 5px 5px 0 rgba(255, 255, 255, 0.1);
     --box-shadow-terteary: 0 3px 3px 0 rgba(255, 255, 255, 0.2);
@@ -387,7 +389,7 @@ body {
 
 .logo {
   font-size: 1.250rem;
-  color: #207e62;
+  color: var(--logo-color);
   font-weight: 300;
   text-align: center;
   span {
