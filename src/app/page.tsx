@@ -1,16 +1,93 @@
+'use client';
+
 import Link from "next/link";
 import { KPICard } from "./components/KPICard/KPICard"
-import { NewsItem } from "./components/NewsItem/NewsItem"
+import { NewsItem } from "./components/NewsItem/NewsItem";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const kpiData = [
+    {
+      titleKPI: "Precio promedio del huevo",
+      valueKPI: "$45.00",
+      unitKPI: "kg",
+      indicatorKPI: "positive",
+      variationKPI: 1.2,
+    },
+    {
+      titleKPI: "Producción diaria de huevo",
+      valueKPI: 120,
+      unitKPI: "ton",
+      indicatorKPI: "negative",
+      variationKPI: 0.8,
+    },
+    {
+      titleKPI: "Consumo per cápita anual",
+      valueKPI: 24,
+      unitKPI: "kg",
+      indicatorKPI: "neutral",
+      variationKPI: 0,
+    },
+    {
+      titleKPI: "Volumen en mercados",
+      valueKPI: 95,
+      unitKPI: "ton",
+      indicatorKPI: "positive",
+      variationKPI: 2.3,
+    },
+    {
+      titleKPI: "Costo de producción por kg",
+      valueKPI: "$28.50",
+      unitKPI: "kg",
+      indicatorKPI: "negative",
+      variationKPI: 1.5,
+    },
+  ];
+
+  // function getRandomVariation() {
+  //   // Simula cambio diario entre -1% y +1%
+  //   return parseFloat((Math.random() * 2 - 1).toFixed(2));
+  // }
+
+  // function getIndicator(variation) {
+  //   if (variation > 0) return "positive";
+  //   if (variation < 0) return "negative";
+  //   return "neutral";
+  // }
+
+
+  // const [kpis, setKpis] = useState(kpiData);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setKpis((prevKpis) =>
+  //       prevKpis.map((kpi) => {
+  //         if (kpi.titleKPI.includes("Precio promedio del huevo")) {
+  //           const variation = getRandomVariation();
+  //           const indicator = getIndicator(variation);
+  //           const newValue = parseFloat(
+  //             (kpi.valueKPI * (1 + variation / 100)).toFixed(2)
+  //           );
+  //           return {
+  //             ...kpi,
+  //             valueKPI: newValue,
+  //             variationKPI: Math.abs(variation),
+  //             indicatorKPI: indicator,
+  //           };
+  //         }
+  //         return kpi; // resto no cambia
+  //       })
+  //     );
+  //   }, 3000); // cada 3 segundos
+  //   return () => clearInterval(interval);
+  // }, []);
+
   return (
     <main className="main-content py-6 px-6 xl:py-8 xl:px-10">
       <div className="xl:flex justify-between gap-4 mb-10">
-        <KPICard />
-        <KPICard />
-        <KPICard />
-        <KPICard />
-        <KPICard />
+        {kpiData.map((kpi, index) => (
+          <KPICard key={index} title={kpi.titleKPI} value={kpi.valueKPI} unit={kpi.unitKPI} indicator={kpi.indicatorKPI} variation={kpi.variationKPI} />
+        ))}
       </div>
       <div className="xl:grid grid-cols-12 gap-10 mb-10 news-and-embedded">
         <div className="col-span-4 col-news mb-4">
