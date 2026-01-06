@@ -291,18 +291,13 @@ body {
       &::after {
         content: "";
         position: absolute;
-        top: calc(100% + 0.875rem);
+        top: calc(100% + 1.5rem);
         left: 0;
         width: 0;
         height: 5px;
         background-color: #427836;
         opacity: 0;
         visibility: hidden;
-        /* border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        -ms-border-radius: 50px;
-        -o-border-radius: 50px; */
         transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
