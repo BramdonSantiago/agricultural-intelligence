@@ -239,6 +239,12 @@ body {
         font-size: 1.250rem;
         margin-bottom: 1rem;
       }
+      .logo-content {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        translate: -50% 0;
+      }
     }
     .nav-item {
       font-weight: 500;
@@ -249,10 +255,11 @@ body {
       -ms-transition: color 0.3s ease;
       -o-transition: color 0.3s ease;
 
-      &::before {
+      &::after {
         content: "";
         position: absolute;
         top: calc(100% + 0.875rem);
+        left: 0;
         width: 0;
         height: 5px;
         background-color: #427836;
@@ -268,13 +275,15 @@ body {
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
+        @media(max-width: 991px) {
+          top: calc(100% + 0.5rem);
+        } 
       }
 
       &:hover,
       &.active-nav-item {
         color: #427836;
-
-        &::before {
+        &::after {
           opacity: 1;
           visibility: visible;
           width: 100%;
@@ -322,9 +331,14 @@ body {
   font-size: 1.250rem;
   color: #207e62;
   font-weight: 300;
-
+  text-align: center;
   span {
     font-weight: 700;
+  }
+  .copy {
+    color: var(--gray2-color);
+    font-weight: 300;
+    font-size: 0.75rem;
   }
 }
 

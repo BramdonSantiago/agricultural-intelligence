@@ -10,6 +10,7 @@ export function Header() {
             <div className="flex items-center justify-between py-4 px-6 xl:py-4 xl:px-10">
                 <Link href="/" className="logo">
                     <span>Agro</span>Tech
+                    <p className="copy">By BISC</p>
                 </Link>
                 <nav className="flex gap-8 nav-list">
                     <h3 className="title-menu-navigation lg:hidden">Menú de Navegación</h3>
@@ -19,6 +20,12 @@ export function Header() {
                     <Link className={`${pathname === '/tableros' ? 'active-nav-item' : ''} nav-item`} href="/tableros">Tableros</Link>
                     <Link className={`${pathname === '/analisis' ? 'active-nav-item' : ''} nav-item`} href="/analisis">Ánalisis</Link>
                     <Link className={`${pathname === '/documentos' ? 'active-nav-item' : ''} nav-item`} href="/documentos">Documentos</Link>
+                    <div className="lg:hidden logo-content">
+                        <Link href="/" className="logo">
+                            <span>Agro</span>Tech
+                            <p className="copy">By BISC</p>
+                        </Link>
+                    </div>
                 </nav>
                 <div>
                     <span>Huevo | Pollo</span>
