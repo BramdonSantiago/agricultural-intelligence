@@ -13,7 +13,7 @@ export default function Home() {
     {
       titleKPI: "Precio promedio del huevo",
       valueKPI: "$45.00",
-      unitKPI: "kg",
+      unitKPI: "MXN / kg",
       indicatorKPI: "positive",
       variationKPI: 1.2,
     },
@@ -68,9 +68,9 @@ export default function Home() {
     },
     {
       id: 3,
-      title: "Autoridades refuerzan medidas sanitarias en granjas avícolas del país",
+      title: "Granjas avícolas refuerzan sus propias prácticas sanitarias a nivel nacional",
       date: "05/01/2026",
-      image: "assets/img/news-8.jpg",
+      image: "assets/img/news-10.jpg",
       source: "ADN40",
       summary: "Los precios del kilo de huevo en CDMX y Estado de México se mantienen entre rangos establecidos por el SNIIM, con variaciones según los centros de distribución y mercado local.",
       category: "Sanidad",
@@ -78,7 +78,7 @@ export default function Home() {
     {
       id: 4,
       title: "México mantiene estatus sanitario favorable en producción de huevo",
-      date: "07/01/2026",
+      date: "08/01/2026",
       image: "assets/img/news-9.jpg",
       source: "La Mejor",
       summary: "La Profeco identificó marcas de huevo que han reducido su precio recientemente, beneficiando al consumidor con opciones más accesibles sin sacrificar calidad.",
@@ -110,8 +110,8 @@ export default function Home() {
           <h2>Noticias</h2>
           <ul className="news-list">
             {newsData.map((news, index) => (
-              <div className="mb-2">
-                <NewsItem key={index} title={news.title} date={news.date} image={news.image} category={news.category} />
+              <div key={index} className="mb-2">
+                <NewsItem title={news.title} date={news.date} image={news.image} category={news.category} />
               </div>
             ))}
           </ul>
