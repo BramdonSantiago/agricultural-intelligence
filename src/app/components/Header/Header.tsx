@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 export function Header() {
     const pathname = usePathname();
+    const [showNavList, setShowNavList] = useState(false);
+
     return (
         <header className="header">
             <div className="flex items-center justify-between py-4 px-6 xl:py-4 xl:px-10">
@@ -12,7 +15,7 @@ export function Header() {
                     <span>Agro</span>Tech
                     <p className="copy">By BISC</p>
                 </Link>
-                <nav className="flex gap-8 nav-list">
+                <nav className={`flex gap-8 nav-list ${showNavList ? 'show-nav-list' : ''}`}>
                     <h3 className="title-menu-navigation lg:hidden">Menú de Navegación</h3>
                     <Link className={`${pathname === '/' ? 'active-nav-item' : ''} nav-item`} href="/">Inicio</Link>
                     <Link className={`${pathname === '/kpis' ? 'active-nav-item' : ''} nav-item`} href="/kpis">KPIs</Link>
@@ -39,7 +42,7 @@ export function Header() {
                     </label>
                 </div>
                 <div className="lg:hidden">
-                    <div className="menu-hamburger">
+                    <div onClick={() => setShowNavList(!showNavList)} className="menu-hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
