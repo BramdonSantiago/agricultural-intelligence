@@ -421,8 +421,8 @@ body {
 }
 
 .accordion-item {
-  min-height: 50px;
-  max-height: 50px;
+  min-height: 55px;
+  max-height: 55px;
   color: var(--gray1-color);
   border-bottom: 1px solid #ececec;
   font-size: 0.875rem;
@@ -463,14 +463,6 @@ body {
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    /* opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-    transition: all 0.6s ease;
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease; */
     p {
       font-size: 0.8rem;
       color: var(--gray2-color);
@@ -494,11 +486,6 @@ body {
         -o-transform: rotate(-180deg);
       }
     }
-    /* .accordion-body {
-      opacity: 1;
-      visibility: visible;
-      max-height: 100dvh;
-    } */
   }
 }
 
