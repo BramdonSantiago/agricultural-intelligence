@@ -9,11 +9,11 @@ import { useEffect, useState } from "react";
 export function Header() {
     const { theme, setTheme } = useTheme();
     const [checked, setChecked] = useState(false);
+    const [isSystemDark, setIsSystemDark] = useState(false);
 
     const pathname = usePathname();
     const [showNavList, setShowNavList] = useState(false);
 
-    // Resolver tema real (system → light/dark)
     useEffect(() => {
         const isDark =
             theme === "dark" ||
@@ -28,6 +28,20 @@ export function Header() {
         setChecked(isChecked);
         setTheme(isChecked ? "dark" : "light");
     };
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        const updateTheme = () => setIsSystemDark(mediaQuery.matches);
+
+        updateTheme();
+
+        mediaQuery.addEventListener("change", updateTheme);
+
+        return () => mediaQuery.removeEventListener("change", updateTheme);
+    }, []);    
+
+    if (isSystemDark === null) return null;
 
     return (
         <header className="header">
@@ -75,19 +89,22 @@ export function Header() {
                         </div>
                     </label>
                 </div> */}
-                <div>
-                    <label className="ui-switch">
-                        <input
-                            type="checkbox"
-                            checked={checked}
-                            onChange={handleChange}
-                            aria-label="Cambiar tema"
-                        />
-                        <div className="slider">
-                            <div className="circle" />
-                        </div>
-                    </label>
-                </div>
+                {!isSystemDark
+                    &&
+                    <div>
+                        <label className="ui-switch">
+                            <input
+                                type="checkbox"
+                                checked={checked}
+                                onChange={handleChange}
+                                aria-label="Cambiar tema"
+                            />
+                            <div className="slider">
+                                <div className="circle" />
+                            </div>
+                        </label>
+                    </div>
+                }
                 <div className="lg:hidden">
                     <div onClick={() => setShowNavList(!showNavList)} className="menu-hamburger">
                         <span></span>

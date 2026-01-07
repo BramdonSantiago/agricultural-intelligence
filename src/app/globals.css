@@ -78,6 +78,7 @@
   --box-shadow-terteary: 0 3px 3px 0 rgba(255, 255, 255, 0.2);
 }
 
+
 body {
   background-color: var(--background-color-primary);
   /* font-family: Arial, Helvetica, sans-serif; */
