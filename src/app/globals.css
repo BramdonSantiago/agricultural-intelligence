@@ -245,7 +245,7 @@ body {
 }
 
 .menu-hamburger {
-  width: 32px;
+  width: 28px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
