@@ -106,7 +106,7 @@ export default function Home() {
         ))}
       </div>
       <div className="xl:grid grid-cols-12 gap-10 mb-10 news-and-embedded">
-        <div className="col-span-4 col-news mb-4">
+        <div className="col-span-4 col-news mb-16 xl:mb-0">
           <h2>Noticias</h2>
           <ul className="news-list">
             {newsData.map((news, index) => (
@@ -117,7 +117,7 @@ export default function Home() {
             <Link href={''} className="btn btn-primary">Ver más Noticias</Link>
           </div>
         </div>
-        <div className="col-span-8 mb-4">
+        <div className="col-span-8 ">
           {/* <h2>Tablero</h2> */}
           <div className="side-power-bi">
             <div>

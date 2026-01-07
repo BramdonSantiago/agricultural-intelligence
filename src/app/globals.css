@@ -442,7 +442,7 @@ body {
   -o-border-radius: 8px;
   iframe {
     width: 100%;
-    height: 25rem;
+    height: 22rem;
     border: 0;
     @media(min-width: 1200px) {
       height: 33rem;
