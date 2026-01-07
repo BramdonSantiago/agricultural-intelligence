@@ -96,6 +96,30 @@ export default function Home() {
   ];
 
 
+  useEffect(() => {
+    const accordions = document.querySelectorAll<HTMLDetailsElement>(
+      ".accordion-item"
+    );
+
+    accordions.forEach((item) => {
+      item.addEventListener("toggle", () => {
+        if (item.open) {
+          accordions.forEach((other) => {
+            if (other !== item) other.open = false;
+          });
+        }
+      });
+    });
+
+    // cleanup (importante en React)
+    return () => {
+      accordions.forEach((item) => {
+        item.replaceWith(item.cloneNode(true));
+      });
+    };
+  }, []);
+
+
 
 
   return (
