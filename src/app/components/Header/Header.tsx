@@ -15,6 +15,17 @@ export function Header() {
     const [showNavList, setShowNavList] = useState(false);
 
     useEffect(() => {
+        if (showNavList) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [showNavList]);  
+
+    useEffect(() => {
         const isDark =
             theme === "dark" ||
             (theme === "system" &&
