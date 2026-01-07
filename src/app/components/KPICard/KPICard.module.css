@@ -12,8 +12,16 @@
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     position: relative;
+    width: 47.9%;
+    &:first-child {
+        width: 100%;
+    }
     @media(min-width: 1200px) {
         width: 20%;
+        margin-bottom: 0;
+        &:first-child {
+            width: 20%;
+        }
     }
     &::before {
         content: "";
@@ -35,6 +43,7 @@
 .titleKPI {
     font-size: 1rem;
     font-weight: 600;
+    line-height: 1.2;
     margin-bottom: 1rem;
 }
 

@@ -100,7 +100,7 @@ export default function Home() {
 
   return (
     <main className="main-content py-6 px-6 xl:py-8 xl:px-10">
-      <div className="xl:flex justify-between gap-4 mb-10">
+      <div className="flex flex-wrap xl:flex-nowrap justify-between gap-4 mb-10">
         {kpiData.map((kpi, index) => (
           <KPICard key={index} title={kpi.titleKPI} value={kpi.valueKPI} unit={kpi.unitKPI} indicator={kpi.indicatorKPI} variation={kpi.variationKPI} />
         ))}
@@ -110,9 +110,7 @@ export default function Home() {
           <h2>Noticias</h2>
           <ul className="news-list">
             {newsData.map((news, index) => (
-              <div key={index} className="mb-2">
-                <NewsItem title={news.title} date={news.date} image={news.image} category={news.category} />
-              </div>
+              <NewsItem key={news.id} title={news.title} date={news.date} image={news.image} category={news.category} />
             ))}
           </ul>
           <div className="mt-4 text-end">

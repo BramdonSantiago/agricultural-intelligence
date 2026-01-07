@@ -429,13 +429,7 @@ body {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 } */
 
-.news-list {
-  padding-right: 1rem;
-  max-height: 30rem;
-  overflow: auto;
 
-
-}
 
 .side-power-bi {
   /* margin-top: 3rem; */
@@ -562,6 +556,19 @@ body {
   }
 }
 
+
+.news-list {
+  display: flex;
+  overflow: auto;
+  gap: 1rem;
+}
+
+@media(min-width: 1200px) {
+  .news-list {
+    padding-right: 1rem;
+    max-height: 30rem;
+  }
+}
 
 
 
