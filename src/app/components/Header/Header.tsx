@@ -2,11 +2,32 @@
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useTheme } from "../../context/ThemeContext";
+import type { ThemeMode } from "../../context/ThemeContext";
+import { useEffect, useState } from "react";
 
 export function Header() {
+    const { theme, setTheme } = useTheme();
+    const [checked, setChecked] = useState(false);
+
     const pathname = usePathname();
     const [showNavList, setShowNavList] = useState(false);
+
+    // Resolver tema real (system → light/dark)
+    useEffect(() => {
+        const isDark =
+            theme === "dark" ||
+            (theme === "system" &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches);
+
+        setChecked(isDark);
+    }, [theme]);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const isChecked = e.target.checked;
+        setChecked(isChecked);
+        setTheme(isChecked ? "dark" : "light");
+    };
 
     return (
         <header className="header">
@@ -31,13 +52,39 @@ export function Header() {
                     </div>
                 </nav>
                 <div>
-                    <span>Huevo | Pollo</span>
+                    <span>Huevo - Pollo</span>
                 </div>
-                <div>
+                {/* <div>
+                    <button
+                        onClick={toggleTheme}
+                        role="switch"
+                        aria-checked={resolvedTheme === "dark"}
+                        aria-label="Cambiar tema"
+                        className="theme-toggle"
+                    >
+                        <span className="theme-toggle__icon">
+                            {resolvedTheme === "dark" ? "🌙" : "☀️"}
+                        </span>
+                    </button>
+                </div> */}
+                {/* <div>
                     <label className="ui-switch">
                         <input type="checkbox" />
                         <div className="slider">
                             <div className="circle"></div>
+                        </div>
+                    </label>
+                </div> */}
+                <div>
+                    <label className="ui-switch">
+                        <input
+                            type="checkbox"
+                            checked={checked}
+                            onChange={handleChange}
+                            aria-label="Cambiar tema"
+                        />
+                        <div className="slider">
+                            <div className="circle" />
                         </div>
                     </label>
                 </div>

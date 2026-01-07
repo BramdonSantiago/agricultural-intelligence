@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./context/ThemeContext";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 
@@ -35,11 +36,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         // className={`${geistSans.variable} ${geistMono.variable} antialiased xl:py-8 xl:px-12`}
       >
-          <div className="dash-content">
-            <Header />
-            {children}
-            <Footer />
-          </div>
+          <ThemeProvider>
+            <div className="dash-content">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </ThemeProvider>
       </body>
     </html>
   );
