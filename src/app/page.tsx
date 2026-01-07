@@ -51,7 +51,7 @@ export default function Home() {
     {
       id: 1,
       title: "Precio del huevo en México sube 19% por presiones del mercado de EE. UU",
-      date: "01/01/2026",
+      date: "1/1/2026",
       image: "assets/img/news-1.jpg",
       source: "El Imparcial",
       summary: "El precio del huevo en México ha aumentado 19% debido a presiones del mercado en Estados Unidos y factores de oferta y demanda locales. La producción nacional se mantiene estable, pero la variación internacional influye en los precios locales.",
@@ -60,7 +60,7 @@ export default function Home() {
     {
       id: 2,
       title: "Precio del huevo y pollo encarece la canasta básica en México",
-      date: "03/01/2026",
+      date: "3/1/2026",
       image: "assets/img/news-2.jpg",
       source: "El País",
       summary: "El precio del huevo y del pollo ha encarecido la canasta básica en México debido a la gripe aviar en Estados Unidos, lo que ha aumentado costos y generado presión inflacionaria en productos esenciales.",
@@ -69,7 +69,7 @@ export default function Home() {
     {
       id: 3,
       title: "Granjas avícolas refuerzan sus propias prácticas sanitarias a nivel nacional",
-      date: "05/01/2026",
+      date: "5/1/2026",
       image: "assets/img/news-10.jpg",
       source: "ADN40",
       summary: "Los precios del kilo de huevo en CDMX y Estado de México se mantienen entre rangos establecidos por el SNIIM, con variaciones según los centros de distribución y mercado local.",
@@ -78,7 +78,7 @@ export default function Home() {
     {
       id: 4,
       title: "México mantiene estatus sanitario favorable en producción de huevo",
-      date: "08/01/2026",
+      date: "8/1/2026",
       image: "assets/img/news-9.jpg",
       source: "La Mejor",
       summary: "La Profeco identificó marcas de huevo que han reducido su precio recientemente, beneficiando al consumidor con opciones más accesibles sin sacrificar calidad.",
@@ -87,7 +87,7 @@ export default function Home() {
     {
       id: 5,
       title: "Aumenta el volumen de comercialización de huevo en el mercado nacional",
-      date: "10/01/2026",
+      date: "10/1/2026",
       image: "assets/img/news-5.jpg",
       source: "NMás",
       summary: "El precio de la cartera de 30 huevos alcanzó un valor histórico de 110 pesos mexicanos en Tijuana, marcado por variaciones de mercado y costos en la cadena de suministro.",
