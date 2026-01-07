@@ -561,14 +561,12 @@ body {
   display: flex;
   overflow: auto;
   gap: 1rem;
-}
-
-@media(min-width: 1200px) {
-  .news-list {
+  @media(min-width: 1200px) {
     padding-right: 1rem;
     max-height: 30rem;
   }
 }
+
 
 
 
