@@ -328,9 +328,8 @@ body {
       }
       .logo-content {
         position: absolute;
-        bottom: 40px;
-        left: 50%;
-        translate: -50% 0;
+        bottom: 2rem;
+        left: 1.5rem;
       }
     }
     .nav-item {
