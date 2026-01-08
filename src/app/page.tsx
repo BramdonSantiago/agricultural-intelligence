@@ -95,6 +95,82 @@ export default function Home() {
     },
   ];
 
+  const poultryAnalysis = [
+    {
+      id: 1,
+      title: "Informe de Producción Avícola",
+      description:
+        "Análisis detallado de la producción nacional de huevo y pollo, incluyendo volumen, crecimiento anual y distribución por región.",
+      link: "/docs/analisis/informe-produccion-avicola.pdf",
+    },
+    {
+      id: 2,
+      title: "Tendencias de Consumo",
+      description:
+        "Estudio sobre el comportamiento del consumidor, cambios en hábitos alimenticios y demanda de productos avícolas.",
+      link: "/docs/analisis/tendencias-consumo-avicola.pdf",
+    },
+    {
+      id: 3,
+      title: "Costos de Alimentación",
+      description:
+        "Evaluación de los principales insumos para la alimentación avícola, variaciones de precios y su impacto en la rentabilidad.",
+      link: "/docs/analisis/costos-alimentacion-avicola.pdf",
+    },
+    {
+      id: 4,
+      title: "Eficiencia Productiva",
+      description:
+        "Indicadores clave de desempeño en granjas avícolas, eficiencia por ciclo productivo y uso de recursos.",
+      link: "/docs/analisis/eficiencia-productiva-avicola.pdf",
+    },
+    {
+      id: 5,
+      title: "Impacto de Precios al Consumidor",
+      description:
+        "Análisis del comportamiento de precios de huevo y pollo en el mercado interno y su relación con costos de producción.",
+      link: "/docs/analisis/impacto-precios-consumidor.pdf",
+    },
+  ];
+
+  const poultryDocuments = [
+    {
+      id: 1,
+      title: "Normas Sanitarias Avícolas",
+      description:
+        "Compendio de regulaciones y lineamientos sanitarios aplicables a la producción de huevo y pollo.",
+      link: "/docs/documentos/normas-sanitarias-avicolas.pdf",
+    },
+    {
+      id: 2,
+      title: "Reporte de Comercio Exterior",
+      description:
+        "Información sobre exportaciones e importaciones de productos avícolas, mercados destino y balanza comercial.",
+      link: "/docs/documentos/reporte-comercio-exterior-avicola.pdf",
+    },
+    {
+      id: 3,
+      title: "Estudios de Mercado",
+      description:
+        "Investigaciones de mercado enfocadas en competitividad, precios y oportunidades del sector avícola.",
+      link: "/docs/documentos/estudios-mercado-avicola.pdf",
+    },
+    {
+      id: 4,
+      title: "Lineamientos de Bienestar Animal",
+      description:
+        "Documentación técnica sobre prácticas recomendadas de bienestar animal en la producción avícola.",
+      link: "/docs/documentos/bienestar-animal-avicola.pdf",
+    },
+    {
+      id: 5,
+      title: "Guías Técnicas de Producción",
+      description:
+        "Manuales y guías operativas para la producción eficiente y sostenible de huevo y pollo.",
+      link: "/docs/documentos/guias-tecnicas-produccion.pdf",
+    },
+  ];
+
 
   useEffect(() => {
     const accordions = document.querySelectorAll<HTMLDetailsElement>(
@@ -158,61 +234,19 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
             <div className="accordion">
-              <details open className="accordion-item">
-                <summary>Informe de producción avicola</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+              {poultryAnalysis.map((analysis, index) => (
+                <details key={analysis.id} open className="accordion-item">
+                  <summary>{analysis.title}</summary>
+                  <div className="accordion-body">
+                    <p>
+                      {analysis.description}
+                    </p>
+                    <div className="mt-4">
+                      <a href={analysis.link} target="_blank" download className="btn btn-secondary">Descargar Análisis</a>
+                    </div>
                   </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Informe de producción avicola</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum temporibus sequi debitis veniam quod minima ex vitae omnis porro, voluptates vero similique magni nisi quo placeat perferendis qui dolorum tempora? Quaerat nulla ex explicabo, pariatur blanditiis veritatis? Molestiae repudiandae facere alias laborum numquam repellendus qui ab hic aliquid, facilis quam earum saepe voluptatum delectus accusamus beatae. Laboriosam sapiente amet quod libero iure, ea pariatur culpa facilis consequuntur quos vero magnam distinctio esse deserunt autem omnis mollitia qui explicabo inventore modi quis incidunt molestiae fugit labore? Aut, reprehenderit? Distinctio incidunt numquam repudiandae nostrum. Iste, impedit. Suscipit animi dolorem consequatur optio doloribus, numquam qui fuga? Aspernatur eveniet harum aliquam minima, tempora facilis facere libero a, quam incidunt repellendus quibusdam necessitatibus maiores odit!
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Informe de producción avicola</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Informe de producción avicola</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Informe de producción avicola</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
+                </details>
+              ))}
             </div>
           </div>
         </div>
@@ -220,61 +254,19 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Documentos</h3>
             <div className="accordion">
-              <details open className="accordion-item">
-                <summary>Normas sanitarias</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
+              {poultryDocuments.map((document, index) => (
+                <details key={document.id} open className="accordion-item">
+                  <summary>{document.title}</summary>
+                  <div className="accordion-body">
+                    <p>
+                      {document.description}
+                    </p>
+                    <div className="mt-4">
+                      <a href={document.link} target="_blank" download className="btn btn-secondary">Descargar Documento</a>
+                    </div>
                   </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Normas sanitarias</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Normas sanitarias</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Normas sanitarias</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
-              <details className="accordion-item">
-                <summary>Normas sanitarias</summary>
-                <div className="accordion-body">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iste sapiente rerum ex deserunt enim dignissimos maiores quia. Dolorum, exercitationem.
-                  </p>
-                  <div className="mt-4">
-                    <a href="#" className="btn btn-secondary">Descargar documento</a>
-                  </div>
-                </div>
-              </details>
+                </details>
+              ))}
             </div>
           </div>
         </div>
