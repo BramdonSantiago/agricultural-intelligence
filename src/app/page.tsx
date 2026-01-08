@@ -101,35 +101,35 @@ export default function Home() {
       title: "Informe de Producción Avícola",
       description:
         "Análisis detallado de la producción nacional de huevo y pollo, incluyendo volumen, crecimiento anual y distribución por región.",
-      link: "/docs/analisis/informe-produccion-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 2,
       title: "Tendencias de Consumo",
       description:
         "Estudio sobre el comportamiento del consumidor, cambios en hábitos alimenticios y demanda de productos avícolas.",
-      link: "/docs/analisis/tendencias-consumo-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 3,
       title: "Costos de Alimentación",
       description:
         "Evaluación de los principales insumos para la alimentación avícola, variaciones de precios y su impacto en la rentabilidad.",
-      link: "/docs/analisis/costos-alimentacion-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 4,
       title: "Eficiencia Productiva",
       description:
         "Indicadores clave de desempeño en granjas avícolas, eficiencia por ciclo productivo y uso de recursos.",
-      link: "/docs/analisis/eficiencia-productiva-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 5,
       title: "Impacto de Precios al Consumidor",
       description:
         "Análisis del comportamiento de precios de huevo y pollo en el mercado interno y su relación con costos de producción.",
-      link: "/docs/analisis/impacto-precios-consumidor.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
   ];
 
@@ -139,35 +139,35 @@ export default function Home() {
       title: "Normas Sanitarias Avícolas",
       description:
         "Compendio de regulaciones y lineamientos sanitarios aplicables a la producción de huevo y pollo.",
-      link: "/docs/documentos/normas-sanitarias-avicolas.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 2,
       title: "Reporte de Comercio Exterior",
       description:
         "Información sobre exportaciones e importaciones de productos avícolas, mercados destino y balanza comercial.",
-      link: "/docs/documentos/reporte-comercio-exterior-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 3,
       title: "Estudios de Mercado",
       description:
         "Investigaciones de mercado enfocadas en competitividad, precios y oportunidades del sector avícola.",
-      link: "/docs/documentos/estudios-mercado-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 4,
       title: "Lineamientos de Bienestar Animal",
       description:
         "Documentación técnica sobre prácticas recomendadas de bienestar animal en la producción avícola.",
-      link: "/docs/documentos/bienestar-animal-avicola.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
     {
       id: 5,
       title: "Guías Técnicas de Producción",
       description:
         "Manuales y guías operativas para la producción eficiente y sostenible de huevo y pollo.",
-      link: "/docs/documentos/guias-tecnicas-produccion.pdf",
+      link: "https://drive.google.com/file/d/16fcSAUBtRR1ApWd3hRpDkNwcQGq9CNNq/view?usp=sharing",
     },
   ];
 
@@ -242,7 +242,7 @@ export default function Home() {
                       {analysis.description}
                     </p>
                     <div className="mt-4">
-                      <a href={analysis.link} target="_blank" download className="btn btn-secondary">Descargar Análisis</a>
+                      <a href={analysis.link} target="_blank" download rel="noopener noreferrer" className="btn btn-secondary">Descargar Análisis</a>
                     </div>
                   </div>
                 </details>
@@ -262,7 +262,7 @@ export default function Home() {
                       {document.description}
                     </p>
                     <div className="mt-4">
-                      <a href={document.link} target="_blank" download className="btn btn-secondary">Descargar Documento</a>
+                      <a href={document.link} target="_blank" download rel="noopener noreferrer" className="btn btn-secondary">Descargar Documento</a>
                     </div>
                   </div>
                 </details>
