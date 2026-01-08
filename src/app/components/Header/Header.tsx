@@ -77,7 +77,7 @@ export function Header() {
                     </div>
                 </nav>
                 <div>
-                    <span>Huevo - Pollo</span>
+                    <span className="text-system">Huevo - Pollo</span>
                 </div>
                 {/* <div>
                     <button
