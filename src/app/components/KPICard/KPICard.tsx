@@ -10,7 +10,7 @@ export function KPICard({ title, value, unit, indicator, variation }) {
         <div className={styles.KPI}>
             <h3 className={styles.titleKPI}>{title}</h3>
             <p className={styles.valueKPI}>{value} <span>{unit}</span></p>
-            <p className={styles.indicatorKPI}><span className={`${styles.percentageKPI} ${indicatorClassMap[indicator]}`}><span className={styles.triangle}></span>{variation}</span> esta semana</p>
+            <p className={styles.indicatorKPI}><span className={`${styles.percentageKPI} ${indicatorClassMap[indicator]}`}><span className={styles.triangle}></span>{variation}%</span> esta semana</p>
         </div>
     )
 }
