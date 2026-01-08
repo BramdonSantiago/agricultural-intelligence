@@ -1,13 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  /* --background: #eeeef1;
-  --foreground: #171717;
-  --white-color: #FFF;
-  --black-color: #353535;
-  --gray1-color: #525252;
-  --gray2-color: #666; */
-
   --background-color-primary: #e1e1e1;
   --background-color-secondary: #FFF;
   --background-color-secondary-rgb: 255, 255, 255;
@@ -34,9 +27,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #1a1f2c;
-    --white-color: #202534;
-    --foreground: #ededed; */
 
     --background-color-primary: #191e2c;
     --background-color-secondary: #1e2432;
@@ -55,6 +45,23 @@
     --box-shadow-primary: 0 3px 3px 0 rgba(255, 255, 255, 0.05);
     --box-shadow-secondary: 0 5px 5px 0 rgba(255, 255, 255, 0.1);
     --box-shadow-terteary: 0 3px 3px 0 rgba(255, 255, 255, 0.2);
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #444;
+      border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
   }
 }
 
@@ -76,6 +83,23 @@
   --box-shadow-primary: 0 3px 3px 0 rgba(255, 255, 255, 0.05);
   --box-shadow-secondary: 0 5px 5px 0 rgba(255, 255, 255, 0.1);
   --box-shadow-terteary: 0 3px 3px 0 rgba(255, 255, 255, 0.2);
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
 }
 
 
@@ -250,6 +274,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+
   span {
     height: 3px;
     width: 100%;
@@ -277,6 +302,7 @@ body {
   width: 100%;
   z-index: 9;
   box-shadow: var(--box-shadow-secondary);
+
   .backdrop {
     background-color: rgba(var(--backdrop-color), 0.5);
     position: fixed;
@@ -293,11 +319,13 @@ body {
     -moz-transition: all 0.6s ease;
     -ms-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
+
     &.show-backdrop {
       opacity: 1;
       visibility: visible;
     }
   }
+
   .nav-list {
     @media(max-width: 991px) {
       position: fixed;
@@ -316,22 +344,26 @@ body {
       -moz-transition: all 0.6s ease-in;
       -ms-transition: all 0.6s ease-in;
       -o-transition: all 0.6s ease-in;
+
       &.show-nav-list {
         left: 0;
         opacity: 1;
         visibility: visible;
       }
+
       .title-menu-navigation {
         font-weight: 300;
         font-size: 1.250rem;
         margin-bottom: 1rem;
       }
+
       .logo-content {
         position: absolute;
         bottom: 2rem;
         left: 1.5rem;
       }
     }
+
     .nav-item {
       font-weight: 500;
       position: relative;
@@ -361,14 +393,16 @@ body {
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
+
         @media(max-width: 991px) {
           top: calc(100% + 0.5rem);
-        } 
+        }
       }
 
       &:hover,
       &.active-nav-item {
         color: #427836;
+
         &::after {
           opacity: 1;
           visibility: visible;
@@ -377,6 +411,7 @@ body {
       }
     }
   }
+
   .text-system {
     font-size: 0.875rem;
   }
@@ -422,9 +457,11 @@ body {
   font-weight: 300;
   text-align: center;
   line-height: 1.2;
+
   span {
     font-weight: 700;
   }
+
   .copy {
     color: var(--gray2-color);
     font-weight: 300;
@@ -447,10 +484,12 @@ body {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+
   iframe {
     width: 100%;
     height: 20rem;
     border: 0;
+
     @media(min-width: 1200px) {
       height: 33rem;
     }
@@ -489,6 +528,7 @@ body {
   -moz-transition: all 0.6s ease;
   -ms-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
+
   &:last-child {
     border-color: transparent;
   }
@@ -521,6 +561,7 @@ body {
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+
     p {
       font-size: 0.8rem;
       color: var(--text-color-terteary);
@@ -535,6 +576,7 @@ body {
   &[open] {
     min-height: auto;
     max-height: 100dvh;
+
     summary {
       &::after {
         transform: rotate(-180deg);
@@ -571,6 +613,7 @@ body {
   overflow: auto;
   gap: 0.5rem;
   padding-bottom: 1rem;
+
   @media(min-width: 1200px) {
     padding-bottom: 0;
     flex-direction: column;
