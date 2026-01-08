@@ -200,7 +200,7 @@ export default function Home() {
 
   return (
     <main className="main-content py-6 px-6 xl:py-8 xl:px-10">
-      <div className="flex flex-wrap xl:flex-nowrap justify-between gap-4 mb-10">
+      <div className="flex flex-wrap lg:flex-nowrap justify-between gap-4 mb-10">
         {kpiData.map((kpi, index) => (
           <KPICard key={index} title={kpi.titleKPI} value={kpi.valueKPI} unit={kpi.unitKPI} indicator={kpi.indicatorKPI} variation={kpi.variationKPI} />
         ))}
@@ -229,7 +229,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="xl:grid grid-cols-12 gap-10">
+      <div className="md:grid grid-cols-12 gap-10">
         <div className="col-span-6 mb-4">
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>

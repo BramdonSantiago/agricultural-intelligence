@@ -16,7 +16,13 @@
     &:first-child {
         width: 100%;
     }
-    @media(min-width: 1200px) {
+    @media(min-width: 768px) {
+        width: 30%;
+        &:first-child {
+            width: 65%;
+        }
+    }
+    @media(min-width: 992px) {
         width: 20%;
         margin-bottom: 0;
         &:first-child {
