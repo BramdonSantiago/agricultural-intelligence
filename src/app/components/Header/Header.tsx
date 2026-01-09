@@ -67,7 +67,7 @@ export function Header() {
                     <Link className={`${pathname === '/kpis' ? 'active-nav-item' : ''} nav-item`} href="/kpis">KPIs</Link>
                     <Link className={`${pathname === '/noticias' ? 'active-nav-item' : ''} nav-item`} href="/noticias">Noticias</Link>
                     <Link className={`${pathname === '/tableros' ? 'active-nav-item' : ''} nav-item`} href="/tableros">Tableros</Link>
-                    <Link className={`${pathname === '/analisis' ? 'active-nav-item' : ''} nav-item`} href="/analisis">Ánalisis</Link>
+                    <Link className={`${pathname === '/analisis' ? 'active-nav-item' : ''} nav-item`} href="/analisis">Análisis</Link>
                     <Link className={`${pathname === '/documentos' ? 'active-nav-item' : ''} nav-item`} href="/documentos">Documentos</Link>
                     <div className="lg:hidden logo-content">
                         <Link href="/" className="logo">
