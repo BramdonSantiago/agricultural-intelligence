@@ -9,8 +9,9 @@ import { useState, useEffect } from "react";
 
 
 export default function Home() {
-  const kpiData: any = [
+  const kpiData = [
     {
+      id: 1,
       titleKPI: "Precio promedio del huevo",
       valueKPI: "$45.00",
       unitKPI: "MXN / kg",
@@ -18,6 +19,7 @@ export default function Home() {
       variationKPI: 1.2,
     },
     {
+      id: 2,
       titleKPI: "Producción diaria de huevo",
       valueKPI: 120,
       unitKPI: "ton",
@@ -25,6 +27,7 @@ export default function Home() {
       variationKPI: 0.8,
     },
     {
+      id: 3,
       titleKPI: "Consumo per cápita anual",
       valueKPI: 24,
       unitKPI: "kg",
@@ -32,6 +35,7 @@ export default function Home() {
       variationKPI: 0,
     },
     {
+      id: 4,
       titleKPI: "Volumen en mercados",
       valueKPI: 95,
       unitKPI: "ton",
@@ -39,6 +43,7 @@ export default function Home() {
       variationKPI: 2.3,
     },
     {
+      id: 5,
       titleKPI: "Costo de producción por kg",
       valueKPI: "$28.50",
       unitKPI: "kg",
@@ -47,7 +52,7 @@ export default function Home() {
     },
   ];
 
-  const newsData: any = [
+  const newsData = [
     {
       id: 1,
       title: "Precio del huevo en México sube 19% por presiones del mercado de EE. UU",
@@ -201,15 +206,15 @@ export default function Home() {
   return (
     <main className="main-content py-6 px-6 xl:py-8 xl:px-10">
       <div className="flex flex-wrap lg:flex-nowrap justify-between gap-4 mb-10">
-        {kpiData.map((kpi, index) => (
-          <KPICard key={index} title={kpi.titleKPI} value={kpi.valueKPI} unit={kpi.unitKPI} indicator={kpi.indicatorKPI} variation={kpi.variationKPI} />
+        {kpiData.map((kpi) => (
+          <KPICard key={kpi.id} title={kpi.titleKPI} value={kpi.valueKPI} unit={kpi.unitKPI} indicator={kpi.indicatorKPI} variation={kpi.variationKPI} />
         ))}
       </div>
       <div className="xl:grid grid-cols-12 gap-10 mb-10 news-and-embedded">
         <div className="col-span-4 col-news mb-16 xl:mb-0">
           <h2>Noticias</h2>
           <ul className="news-list">
-            {newsData.map((news, index) => (
+            {newsData.map((news) => (
               <NewsItem key={news.id} title={news.title} date={news.date} image={news.image} category={news.category} />
             ))}
           </ul>
@@ -234,7 +239,7 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
             <div className="accordion">
-              {poultryAnalysis.map((analysis, index) => (
+              {poultryAnalysis.map((analysis) => (
                 <details key={analysis.id} open className="accordion-item">
                   <summary>{analysis.title}</summary>
                   <div className="accordion-body">
@@ -254,7 +259,7 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Documentos</h3>
             <div className="accordion">
-              {poultryDocuments.map((document, index) => (
+              {poultryDocuments.map((document) => (
                 <details key={document.id} open className="accordion-item">
                   <summary>{document.title}</summary>
                   <div className="accordion-body">
