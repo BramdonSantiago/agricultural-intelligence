@@ -239,8 +239,8 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Análisis</h3>
             <div className="accordion">
-              {poultryAnalysis.map((analysis) => (
-                <details key={analysis.id} open className="accordion-item">
+              {poultryAnalysis.map((analysis, index) => (
+                <details key={analysis.id} open={index === 0} className="accordion-item">
                   <summary>{analysis.title}</summary>
                   <div className="accordion-body">
                     <p>
@@ -259,8 +259,8 @@ export default function Home() {
           <div className="documentation-content">
             <h3 className="title-documentation">Documentos</h3>
             <div className="accordion">
-              {poultryDocuments.map((document) => (
-                <details key={document.id} open className="accordion-item">
+              {poultryDocuments.map((document, index) => (
+                <details key={document.id} open={index === 0} className="accordion-item">
                   <summary>{document.title}</summary>
                   <div className="accordion-body">
                     <p>
