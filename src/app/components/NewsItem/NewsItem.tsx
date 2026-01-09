@@ -1,7 +1,7 @@
 import styles from "./NewsItem.module.css"
 
-export function NewsItem({ title, date, image, category }) {
-    const categoryClassMap = {
+export function NewsItem({ title, date, image, category } : any) {
+    const categoryClassMap: any = {
         Precio: styles.price,
         Sanidad: styles.health,
         Comercio: styles.trade,

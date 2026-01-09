@@ -1,7 +1,7 @@
 import styles from "./KPICard.module.css"
 
-export function KPICard({ title, value, unit, indicator, variation }) {
-    const indicatorClassMap = {
+export function KPICard({ title, value, unit, indicator, variation }: any) {
+    const indicatorClassMap: any = {
         positive: styles.positive,
         negative: styles.negative,
         neutral: styles.neutral,
