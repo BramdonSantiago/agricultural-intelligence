@@ -226,7 +226,7 @@ export default function Home() {
           {/* <h2>Tablero</h2> */}
           <div className="side-power-bi">
             <div>
-              <iframe src="http://www.economia.gob.mx/datamexico/en/profile/product/animal-products#product-price-by-states"></iframe>
+              <iframe src="https://www.economia.gob.mx/datamexico/en/profile/product/animal-products#product-price-by-states"></iframe>
             </div>
           </div>
           <div className="mt-4 text-end">
