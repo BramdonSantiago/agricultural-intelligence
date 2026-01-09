@@ -47,20 +47,23 @@
     --box-shadow-terteary: 0 3px 3px 0 rgba(255, 255, 255, 0.2);
 
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 8px;
     }
-
+    
     ::-webkit-scrollbar-track {
-      background: #1a1a1a;
+      background: #222;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #444;
+      background: #525252;
       border-radius: 8px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #666;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      &:hover {
+        background-color: #666;
+      }
     }
   }
 }
@@ -95,10 +98,13 @@
   ::-webkit-scrollbar-thumb {
     background: #525252;
     border-radius: 8px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: #666;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    &:hover {
+      background-color: #666;
+    }
   }
 }
 
