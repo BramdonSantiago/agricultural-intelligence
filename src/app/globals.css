@@ -301,13 +301,13 @@ body {
 
 
 .header {
-  /* background-color: rgba(var(--background-color-secondary-rgb), 0.5);
-  backdrop-filter: blur(10px); */
-  background-color: var(--background-color-secondary);
+  background-color: rgba(var(--background-color-secondary-rgb), 0.5);
+  backdrop-filter: blur(10px);
+  /* background-color: var(--background-color-secondary); */
   color: var(--text-color-secondary);
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100dvw;
   z-index: 9;
   box-shadow: var(--box-shadow-secondary);
 
