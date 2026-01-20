@@ -115,6 +115,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+html,
+body {
+    overflow-x: clip;
+}
+
+
+
 .btn {
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -310,7 +317,6 @@ body {
   width: 100dvw;
   z-index: 9;
   box-shadow: var(--box-shadow-secondary);
-
   .backdrop {
     background-color: rgba(var(--backdrop-color), 0.5);
     position: fixed;
