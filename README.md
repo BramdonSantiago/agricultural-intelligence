@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Figma:
+https://www.figma.com/design/gYdummotm4wSOfhTllmwCn/AgroTech-By-BISC?node-id=0-1&t=wrTo7r6l9gaSpm7e-1
+
+Deploy:
 https://chipper-sfogliatella-77f31e.netlify.app/
 
 <img src="https://drive.google.com/uc?export=view&id=1uT4mtQkyIdXwL6UPigQz4Kv3AyeNHrUO" style="width: 100%;" />
